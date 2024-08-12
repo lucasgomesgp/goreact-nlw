@@ -38,7 +38,7 @@ export function Room() {
             </div>
             <div className="h-px w-full bg-zinc-900" />
             <CreateMessageForm />
-            <Suspense fallback={<p>Carregando...</p>}>
+            <Suspense fallback={<p>Carregando...</p>}> // React 19 - Resposta de loading
                 <Messages />
             </Suspense>
         </div>
